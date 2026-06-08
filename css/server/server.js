@@ -17,10 +17,6 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../index.html"));
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server started on port ${process.env.PORT}`);
-});
-
 const testRoutes = require("./routes/tests");
 
 app.use("/api/tests", testRoutes);
@@ -34,3 +30,7 @@ const resultRoutes = require("./routes/results");
 app.use("/api/results", resultRoutes);
 
 app.use(express.static(path.join(__dirname, "..")));
+
+app.listen(process.env.PORT, () => {
+    console.log(`Server started on port ${process.env.PORT}`);
+});
