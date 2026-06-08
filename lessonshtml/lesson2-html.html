@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel = "stylesheet" href = "../css/lesson2-html.css">
+    <title>HTML Lekce 2</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="../index.html"><img src = ../img/Image.png alt = "logo"></a>
+            </div>
+            <div class="title">
+                <h1>Lekce 2: Text, nadpisy a vnitřní struktura obsahu</h1>
+            </div>
+        </header>
+        <main class="main">
+            <h2>2.1 Hierarchie obsahu</h2>
+            <ul>
+                <p>HTML funguje jako strom:</p>
+                <li>rodič</li>
+                <li>dítě</li>
+                <li>sourozenec</li>
+                <p>Například:</p>
+            </ul>
+            <div><code class="language-js">
+                &lt;section&gt<br>
+                    &lt;h2&gt;Novinky&lt;/h2&gt;<br>
+                    &lt;p&gt;Text článku&lt;/p&gt;<br>
+                &lt;/section&gt;
+            </code></div>
+            <ul>
+                <p>Zde:</p>
+                <li>"section" je rodič</li>
+                <li>"h2" a "p" jsou děti</li>
+            </ul>
+            <h2>2.2 Význam nadpisů</h2>
+            <ul>
+                <p>Nadpisy nejsou jen větší text.</p>
+                <p>Používají se k:</p>
+                <li>vytvoření struktury</li>
+                <li>navigaci pomocí čteček</li>
+                <li>SEO optimalizaci</li>
+                <p>Správně:</p>
+            </ul>
+            <div><code class="language-js">
+                &lt;h1&gt;Hlavní téma&lt;/h1&gt;<br>
+                &lt;h2&gt;Podtéma&lt;/h2&gt;<br>
+                &lt;h3&gt;Detail&lt;/h3&gt;
+            </code></div>
+            <p>Špatně:</p>
+            <div><code class="language-js">
+                &lt;h1&gt;Velký text&lt;/h1&gt;<br>
+                &lt;h1&gt;Další velký text&lt;/h1&gt;
+            </code></div>
+            <h2>2.3 Inline vs Block prvky</h2>
+            <ul>
+                <p>Block prvky:</p>
+                <li>zabírají celý řádek</li> 
+                <li>např. "div", "p", "h1""/p"</li>
+                <p>Inline prvky:</p>
+                <li>jsou uvnitř textu</li> 
+                <li>např. "span", "strong", "a"</li> 
+                <p>To je důležité pro pochopení CSS později.</p>
+            </ul>
+            <img src="https://miro.medium.com/1*8RH99a28L6LCFA04FJ25VQ.jpeg"alt="Block level and Inline elements">
+            <h3>Inline vs Block prvky</h3>
+            <h2>2.4 Sémantické HTML</h2>
+            <p>Dříve se používaly jen prvky.</p>
+            <p>Dnes máme:</p>
+            <div><code class="language-js">
+                &lt;header&gt;<br>
+                &lt;nav&gt;<br>
+                &lt;main&gt;<br>
+                &lt;article&gt;<br>
+                &lt;aside&gt;<br>
+                &lt;footer&gt;
+            </code></div>
+            <p>Tyto prvky dávají význam.</p>
+            <p>Například:</p>
+            <div><code class="language-js">
+                &lt;article&gt;<br>
+                &lt;h2&gt;Název článku&lt;/h2&gt;<br>
+                &lt;p&gt;Obsah článku&lt;/p&gt;<br>
+                &lt;/article&gt;
+            </code></div>
+            <p>Prohlížeč i vyhledávač ví, že jde o článek.</p>
+            <h2>2.5 Seznamy do detailu</h2>
+            <p>Neuspořádaný seznam (ul) používá tečky.</p>
+            <p>Uspořádaný seznam (ol) používá čísla.</p>
+            <p>Existuje i:</p>
+            <div><code class="language-js">
+                &lt;dl&gt;<br> 
+                &lt;dt&gt;Pojem&lt;/dt&gt;<br>
+                &lt;dd&gt;Definice&lt;/dd&gt;<br>
+                &lt;/dl&gt;
+            </code></div>
+            <p>To je definiční seznam.</p>
+        </main>
+        <footer class="footer">
+            <div class="footer__left">
+                <h4>Kontakty:</h4>
+                <p>Outlook:<a href="mailto:chaplynskyi.ol.2024@skola.ssps.cz">chaplynskyi.ol.2024@skola.ssps.cz</a></p>
+                <p>GitHub:<a href="https://github.com/Casino82">Casino82640</a></p>
+            </div>
+            <div class="footer__right">
+                <p>&copy; 2026 Oleh Chaplynskyi</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

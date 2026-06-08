@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel = "stylesheet" href = "../css/lesson3-css.css">
+    <title>HTML Lekce 3</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="../index.html"><img src = ../img/Image.png alt = "logo"></a>
+            </div>
+            <div class="title">
+                <h1>Lekce 3: Odkazy, obrázky a práce s atributy</h1>
+            </div>
+        </header>
+        <main class="main">
+            <img src="https://www.klikzone.cz/obrazky/html-element.gif"alt="HTML element">
+            <h2>3.1 Atributy podrobně</h2>
+            <ul>
+                <p>Atribut</p>
+                <li>rozšiřuje tag</li>
+                <li>má název a hodnotu</li>
+                <li>zapisuje se do otevírací znáčky</li>
+                <p>Například:</p>
+                <p>&lt;a href="https://example.com"target="_blank" title="otevre se v novem okne"&gt;</p>
+                <p>Jeden prvek může mít více atributů.</p>
+                <h2>3.2 Typy odkazů</h2>
+                <h3>Externí odkaz</h3>
+                <p>&lt;a href="https://google.com"Google"/a&gt;</p>
+                <h3>Interní odkaz</h3>
+                <p>&lt;a href="kontakt.html"Kontakt"/a&gt;</p>
+                <h3>Odkaz na část stránky</h3>
+                <p>&lt;a href="#sekce1"Přejít dolů"/a&gt;</p>
+                <h2>3.3 Obrázky a optimalizace</h2>
+                <p>Obrázek by měl mít:</p>
+                <li>správnou velikost</li>
+                <li>kompresi</li>
+                <li>alt text</li>
+                <p>Například:</p>
+                <p>&lt;img src="obrazek.jpg" alt="Fotografie města Praha"&gt;</p>
+                <p>Alt text je důležitý pro:</p>
+                <li>nevidomé uživatele</li>
+                <li>SEO</li>
+                <li>situace, kdy se obrázek nenačte</li>
+            </ul>
+            <h2>3.4 Responsivní obrázky</h2>
+            <p>Moderní HTML umožnuje:</p>
+            <div><code class="language-js">
+                &lt;picture&gt;<br>
+                    &lt;source media="(max-width: 600px)"srcset="small.jpg"&gt;<br>
+                    &lt;img src="large.jpg" alt="Popis"&gt;<br>
+                &lt;/picture&gt;;
+            </code></div>
+            <p>To umožnuje zobrazit jiný obrázek na mobilu.</p>
+            <h2>3.5 Absolutní vs relativní cesta do hloubky</h2>
+            <p>Absolutní cesta:</p>
+            <p>"https://example.com/images/photo.jpg"</p>
+            <p>Relativní cesta:</p>
+            <p>"images/photo.jpg"</p>
+            <p>Relativní je lepší pro projekty.</p>
+        </main>
+        <footer class="footer">
+            <div class="footer__left">
+                <h4>Kontakty:</h4>
+                <p>Outlook:<a href="mailto:chaplynskyi.ol.2024@skola.ssps.cz">chaplynskyi.ol.2024@skola.ssps.cz</a></p>
+                <p>GitHub:<a href="https://github.com/Casino82">Casino82640</a></p>
+            </div>
+            <div class="footer__right">
+                <p>&copy; 2026 Oleh Chaplynskyi</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

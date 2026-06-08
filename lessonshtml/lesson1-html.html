@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel = "stylesheet" href = "../css/lesson1-html.css">
+    <title>HTML Lekce 1</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="../index.html"><img src = ../img/Image.png alt = "logo"></a>
+            </div>
+            <div class="title">
+                <h1>Lekce 1: Co je HTML, jak vzniklo a k čemu slouží?</h1>
+            </div>
+        </header>
+        <main class="main">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-logo-icon-svg-download-png-3030115.png"alt="HTML Logo">
+            <h2>1.1 Co je vlastně webová stránka?</h2>
+            <p>Než pochopíme HTML, musíme pochopit, co je webová stránka. Webová stránka je textový soubor uložený na serveru, který si stáhne prohlížeč (Chrome, Firefox, Safari) a vykreslí ho jako vizuální stránku. Prohlížeč ale nerozumí „hezkému designu“, rozumí pouze značkám (tagům). A právě tyto značky jsou jazyk HTML.</p>
+            <h2>1.2 HTML jako značkovací jazyk</h2>
+            <ul>
+                <p>HTML není programovací jazyk.</p>
+                <p>Neobsahuje:</p>
+	            <li>smyčky</li>
+	            <li>podmínky</li>
+	            <li>výpočty</li>
+	            <li>algoritmy</li>
+                <p>HTML pouze říká:</p>
+                <li>„Toto je nadpis.“</li>
+                <li>„Toto je odstavec.“</li>
+                <li>„Toto je obrázek.“</li>
+                <li>„Toto je odkaz.“</li>
+                <p>Jinými slovy: HTML popisuje strukturu dokumentu.</p>
+            </ul>
+            <h2>1.3 Co znamená „HyperText“?</h2>
+            <ul>
+                <p>Hypertext znamená text, který obsahuje odkazy na jiné dokumenty</p>
+                <p>Například:</p>
+	            <li>klikneš na odkaz</li>
+	            <li>otevře se jiná stránka</li>
+	            <li>můžeš přecházet mezi informacemi</li>
+                <p>Tento princip je základem internetu. Bez hypertextu by internet byl jen soubor izolovaných dokumentů.</p>
+            </ul>
+            <h2>1.4 Historie HTML podrobněji</h2>
+            <ul>
+                <li>Rok 1989 – Tim Berners-Lee navrhuje systém propojených dokumentů.</li>
+                <li>1991 – vzniká první verze HTML.</li>
+                <p>První HTML obsahovalo jen:</p>
+	            <li>nadpisy</li>
+	            <li>odstavce</li>
+	            <li>odkazy</li>
+                <p>ostupně přibylo:</p>
+	            <li>obrázky (1993)</li>
+	            <li>tabulky</li>
+	            <li>formuláře</li>
+	            <li>CSS integrace</li>
+	            <li>JavaScript podpora</li>
+                <p>HTML5 (2014) přineslo:</p>
+	            <li>"video"</li>
+	            <li>"audio"</li>
+	            <li>"canvas"</li>
+	            <li>nové formulářové prvky</li>
+	            <li>sémantické značky</li>
+                <li>Dnes je HTML standard spravovaný organizací W3C.</li>
+            </ul>
+            <h2>1.5 Struktura HTML dokumentu do hloubky</h2>
+            <ul>
+                <p>Každý HTML dokument má povinnou základní strukturu:</p>
+                <li>Říká prohlížeči, že používáme moderní HTML5.</li>
+                <li>Kořenový element (root element).</li>
+                <p>Obsahuje:</p>
+                <li>metadata</li>
+                <li>název stránky</li>
+                <li>odkazy na CSS</li>
+                <li>skripty</li>
+                <li>SEO informace</li>
+                <p>Obsahuje vše, co uživatel vidí.</p>
+            </ul>
+            <h2>1.6 Jak prohlížeč čte HTML?</h2>
+            <ol>
+                <li>Stáhne soubor.</li>
+                <li>Čte ho odshora dolů.</li>
+                <li>Vytvoří DOM strom.</li>
+                <li>Zobrazí stránku.</li>
+                <p>Pokud je chyba:</p>
+            </ol>
+            <ul>
+                <li>prohlížeč se ji pokusí opravit.</li>
+                <li>HTML je tolerantní k chybám.</li>
+                <li>To je důvod, proč se někdy stránka zobrazí i při špatném kódu.</li>
+            </ul>
+            <img src="https://miro.medium.com/0*Sk5AAj4ze_bDFPA0.png"alt="DOM strom">
+            <h3>DOM strom</h3>
+            <h2>1.7 Proč je HTML důležité pro SEO?</h2>
+            <ul>
+                <p>Vyhledávače:</p>
+                <li>čtou HTML</li>
+                <li>analyzují nadpisy</li>
+                <li>sledují strukturu</li>
+                <p>Pokud použiješ správně:</p>
+                <li>"h1"</li>
+                <li>"h2"</li>
+                <li>"article"</li>
+                <li>"section"</li>
+                <p>Google lépe pochopí obsah stránky</p>
+            </ul>
+        </main>
+        <footer class="footer">
+            <div class="footer__left">
+                <h4>Kontakty:</h4>
+                <p>Outlook:<a href="mailto:chaplynskyi.ol.2024@skola.ssps.cz">chaplynskyi.ol.2024@skola.ssps.cz</a></p>
+                <p>GitHub:<a href="https://github.com/Casino82">Casino82640</a></p>
+            </div>
+            <div class="footer__right">
+                <p>&copy; 2026 Oleh Chaplynskyi</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
