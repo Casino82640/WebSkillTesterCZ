@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -5,6 +6,12 @@ require("dotenv").config({ path: __dirname + "/.env" });
 
 const { MONGO_URI, JWT_SECRET } = process.env;
 const PORT = process.env.PORT || 5000;
+
+app.use(express.static(path.join(__dirname, "../..")));
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../../index.html"));
+});
 
 // Fail fast with a clear message instead of a cryptic crash later.
 if (!MONGO_URI) {
