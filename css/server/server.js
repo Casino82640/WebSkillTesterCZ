@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -13,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI)
 .catch((err) => console.log(err));
 
 app.get("/", (req, res) => {
-    res.send("WebSkill Tester API works");
+    res.sendFile(path.join(__dirname, "../index.html"));
 });
 
 app.listen(process.env.PORT, () => {
@@ -31,3 +32,5 @@ app.use("/api/users", userRoutes);
 const resultRoutes = require("./routes/results");
 
 app.use("/api/results", resultRoutes);
+
+app.use(express.static(path.join(__dirname, "..")));
